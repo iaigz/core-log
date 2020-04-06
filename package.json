@@ -1,0 +1,34 @@
+{
+  "name": "@iaigz/core-log",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Logging facility for iai modules",
+  "main": "getter.js",
+  "browser": {
+    "./process.js": "./window.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "iai",
+    "core",
+    "log"
+  ],
+  "author": "Lorenzo García Rivera",
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {
+    "@iaigz/util-ansi": "git://github.com/iaigz/util-ansi.git",
+    "@iaigz/util-callsite": "git://github.com/iaigz/util-callsite.git",
+    "iai-oop": "git://github.com/lorenzogrv/iai-oop.git"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iaigz/core-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iaigz/core-log/issues"
+  },
+  "homepage": "https://github.com/iaigz/core-log#readme"
+}
