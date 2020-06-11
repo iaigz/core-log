@@ -91,20 +91,22 @@ function interrupt () {
     log.fatal(2, 'forcing process exit on 5th interrupt', sigintCount)
   }
 }
-process.on('SIGINT', interrupt)
+// process.on('SIGINT', interrupt)
 exports.ignoreSIGINT = function () {
   process.removeListener('SIGINT', interrupt)
 }
 
+/*
 process.on('uncaughtException', function uncaught (err) {
   log.fatal(99, 'Got uncaught exception: %s', err.stack)
 })
+*/
 
 /**
  * SIGUSR2 is the signal used by iai Jobs to exit gracefully
  * set a handle to warn when this signal is forbidden
  */
-
+/*
 process.on('SIGUSR2', function restart () {
   if (!process.listeners('SIGUSR2').filter(fn => fn !== restart).length) {
     log.error('received a SIGUSR2 signal that will not be handled')
@@ -113,7 +115,7 @@ process.on('SIGUSR2', function restart () {
     process.exitCode = 0
   }
 })
-
+*/
 /**
  * Ignore EPIPE errors when appropiate.
  * Based on [epipebomb](https://github.com/mhart/epipebomb).
