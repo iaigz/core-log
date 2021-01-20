@@ -1,6 +1,6 @@
 {
   "name": "@iaigz/core-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Logging facility for iai modules",
   "main": "getter.js",
@@ -18,9 +18,9 @@
   "author": "Lorenzo García Rivera",
   "license": "CC-BY-SA-4.0",
   "dependencies": {
-    "@iaigz/util-ansi": "git://github.com/iaigz/util-ansi.git",
-    "@iaigz/util-callsite": "git://github.com/iaigz/util-callsite.git",
-    "iai-oop": "git://github.com/lorenzogrv/iai-oop.git"
+    "@iaigz/util-ansi": "git+https://github.com/iaigz/util-ansi.git",
+    "@iaigz/util-callsite": "git+https://github.com/iaigz/util-callsite.git",
+    "iai-oop": "git+https://github.com/lorenzogrv/iai-oop.git"
   },
   "devDependencies": {},
   "repository": {

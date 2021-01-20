@@ -140,6 +140,7 @@ process.stdout.on( 'error', epipebomb );
 process.stderr.on( 'error', epipebomb );
 */
 
+/*
 // Provide a custom handler for node warnings
 process.on('warning', warning => {
   log.warn('A node warn raised: %s', warning.name)
@@ -151,6 +152,7 @@ process.on('warning', warning => {
     log.verb(warning.stack)
   }
 })
+*/
 
 // this should not be forced to be displayed, it's just informational
 log.info('process bindings were defined')
